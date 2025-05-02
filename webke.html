@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive World Map</title>
+    <title>My Custom Chrome Background</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
+            margin: 1;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://source.unsplash.com/random/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
-        img {
-            border: 1px solid #ddd;
-            max-width: 100%;
-            height: auto;
+        
+        /* Optional: Add a semi-transparent overlay for better text visibility */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
         }
-        .info {
-            margin-top: 20px;
-            color: #555;
+        
+        /* Optional: Add search box */
+        .search-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            max-width: 600px;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1>Interactive World Map</h1>
-    <p>Click on the marked regions (USA, France, Japan) to test!</p>
-    
-    <!-- Image Map (Using a real world map image) -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" 
-         alt="World Map" 
-         usemap="#worldmap"
-         width="600">
-    
-    <map name="worldmap">
-        <!-- USA (Rectangle) -->
-        <area shape="rect" coords="100,150,200,220" href="#usa" alt="USA" title="USA">
-        <!-- France (Circle) -->
-        <area shape="circle" coords="350,180,30" href="#france" alt="France" title="France">
-        <!-- Japan (Polygon) -->
-        <area shape="poly" coords="550,180,580,200,560,220" href="#japan" alt="Japan" title="Japan">
-    </map>
-    
-    <div class="info">
-        <p><strong>How it works:</strong> The image map defines clickable regions (USA, France, Japan).</p>
-        <p>Replace the coordinates and image URL for your own project.</p>
+    <!-- Optional: Add a search box -->
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search with Google or enter address">
     </div>
 </body>
 </html>
