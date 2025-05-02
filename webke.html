@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive World Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            border: 1px solid #ddd;
+            max-width: 100%;
+            height: auto;
+        }
+        .info {
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
-
-<map name="workmap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
-</map>
+    <h1>Interactive World Map</h1>
+    <p>Click on the marked regions (USA, France, Japan) to test!</p>
+    
+    <!-- Image Map (Using a real world map image) -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" 
+         alt="World Map" 
+         usemap="#worldmap"
+         width="600">
+    
+    <map name="worldmap">
+        <!-- USA (Rectangle) -->
+        <area shape="rect" coords="100,150,200,220" href="#usa" alt="USA" title="USA">
+        <!-- France (Circle) -->
+        <area shape="circle" coords="350,180,30" href="#france" alt="France" title="France">
+        <!-- Japan (Polygon) -->
+        <area shape="poly" coords="550,180,580,200,560,220" href="#japan" alt="Japan" title="Japan">
+    </map>
+    
+    <div class="info">
+        <p><strong>How it works:</strong> The image map defines clickable regions (USA, France, Japan).</p>
+        <p>Replace the coordinates and image URL for your own project.</p>
+    </div>
 </body>
-
 </html>
