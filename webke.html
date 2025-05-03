@@ -5,22 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3x3 HTML Table</title>
     <style>
-        table {
-            border-collapse: collapse; /* Merges cell borders */
-            width: 300px; /* Fixed width */
-            margin: 20px; /* Adds space around the table */
+        table{
+            margin= 25px auto;
+            border-collapse: collapse;
+            width: 15%;
+            border: 2px solid #000;
+            background: paleturquoise;
         }
-        th, td {
-            border: 1px solid black; /* Adds borders to cells */
-            padding: 10px; /* Adds space inside cells */
-            text-align: center; /* Centers text */
+        
+        body {
+            /* This makes the page naturally scrollable when content exceeds viewport */
+            height: 200vh; /* 200% of viewport height to force scrolling */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
         }
-        th {
-            background-color: #f2f2f2; /* Light gray header */
+        
+        .content {
+            /* Just some sample content to make the page longer */
+            height: 1500px; /* Makes the content taller than the viewport */
+            background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            position: fixed; /* Stays visible while scrolling */
+            top: 0;
+            background: white;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
+    
+    
     <h2>3×3 Table Example</h2>
     <table>
         <tr>
