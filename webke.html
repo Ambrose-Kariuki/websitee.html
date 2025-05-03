@@ -38,6 +38,25 @@
             margin: 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        tr:hover {
+            background-color: #f1f1f1; /* Hover effect */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Zebra striping */
+        }
+        th, td {
+            border: 1px solid #ddd;   /* Cell borders */
+            padding: 22px;             /* Spacing inside cells */
+            text-align: left;          /* Text alignment */
+        }
+        th{
+            background-color: aquamarine; /* Header background color */
+            color: black;               /* Header text color */
+        }
+        tr{
+            border-color:black;
+            padding: 10px; /* Row border */
+        }
     </style>
 </head>
 <body>
@@ -79,5 +98,11 @@
             </td>
         </tr>   
     </table>
+    <tfoot>
+        <tr>
+            <td colspan="3" style="text-align: center; background-color: lightgray;">
+                This is a very well labeled table.
+            </td>
+        </tr>
 </body>
 </html>
