@@ -1,55 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Custom Chrome Background</title>
-    <style>
-        body {
-            margin: 1;
-            padding: 0;
-            height: 100vh;
-            background-image: url('https://source.unsplash.com/random/1920x1080');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        
-        /* Optional: Add a semi-transparent overlay for better text visibility */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-            z-index: -1;
-        }
-        
-        /* Optional: Add search box */
-        .search-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 50%;
-            max-width: 600px;
-        }
-        
-        .search-box {
-            width: 100%;
-            padding: 15px;
-            font-size: 18px;
-            border-radius: 30px;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Real Favicon</title>
+    
+    <!-- Base64-encoded SVG Favicon (Smiley Emoji) -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1MCIgZmlsbD0iI2ZmZGI0YiIvPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjE3MCIgcj0iMzAiIGZpbGw9IiM2NjMzMDAiLz48Y2lyY2xlIGN4PSIzNDAiIGN5PSIxNzAiIHI9IjMwIiBmaWxsPSIjNjYzMzAwIi8+PHBhdGggZD0iTTE1MCAyODBjNjAgNDAgMTIwIDQwIDE4MCAwIiBzdHJva2U9IiM2NjMzMDAiIHN0cm9rZS13aWR0aD0iMTUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==" type="image/svg+xml">
+    
+    <!-- Fallback for older browsers (ICO format) -->
+    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREQAAAAAAEAAAEAAAAAEAAAABEAAAEAAAAAEQAAAQAAAAARAAABAAAAABEAAAEAAAAAEQAAAQAAAAARAAABAAAAABEAAAEAAAAAEQAAEAAAAAARAAAQAAAAABEAABAAAAAAEAAAEAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" type="image/x-icon">
 </head>
 <body>
-    <!-- Optional: Add a search box -->
-    <div class="search-container">
-        <input type="text" class="search-box" placeholder="Search with Google or enter address">
-    </div>
+    <h1>Hello! Check the browser tab for the favicon 😊</h1>
+    <p>This page has a <strong>real embedded favicon</strong> (a smiley face).</p>
 </body>
 </html>
