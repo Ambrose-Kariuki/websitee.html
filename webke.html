@@ -62,25 +62,36 @@
 }
     </style>
 </head>
+<style>
+    th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+table {
+  border-spacing: 30px;
+}
+
+</style>
 <body>
     
     
     <h2>3×3 Table Example</h2>
     <table>
         <tr>
-          <th>Firstname</th>
-          <td>Jill</td>
-          <td>Eve</td>
-        </tr>
-        <tr>
-          <th>Lastname</th>
-          <td>Smith</td>
-          <td>Jackson</td>
-        </tr>
-        <tr>
+          <th colspan="2">Name</th>
           <th>Age</th>
-          <td>94</td>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
           <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
         </tr>
       </table>
     <tfoot>
